@@ -4,5 +4,11 @@ class Prob1():
         self.maxNum = maxNum
 
     def answer(self):
-        print "No method yet"
         print "The maximum number range is: %d" % self.maxNum
+        total = 0;
+        for number in range(1,self.maxNum):
+            if number % 3 == 0:
+                total += number
+            elif number % 5 == 0:
+                total += number
+        return total 
