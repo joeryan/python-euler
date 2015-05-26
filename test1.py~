@@ -3,8 +3,8 @@ import prob1
 
 class TestProb1(unittest.TestCase):
     def runTest(self):
-        problem = prob1.Prob1(10)
-        assert problem.answer() == (23), "incorrect answer %d" % problem.answer()
+        problem = prob1.Prob1(100)
+        assert problem.answer() == (100), "incorrect answer %d" % problem.answer()
 
 testCase = TestProb1()
 
