@@ -11,7 +11,7 @@ class TestProb1(unittest.TestCase):
 
     def testFinal(self):
         self.prob1.setMax(1000)
-        assert self.prob1.answer() == (100), "test answer"
+        assert self.prob1.answer() == (100), "incorrect answer %d" % self.prob1.answer()
 
 prob1TestSuite = unittest.TestSuite()
 
