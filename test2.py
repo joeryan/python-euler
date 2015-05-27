@@ -6,11 +6,11 @@ class TestEvenFib(unittest.TestCase):
         self.evenFib = evenFib.evenFib()
 
     def testInitial(self):
-        self.evenFib.setMax(10)
+        self.evenFib.setTerms(10)
         assert self.evenFib.answer() == (44), "incorrect answer %d" % evenFib.answer()
 
     def testFinal(self):
-        self.evenFib.setMax(1000)
+        self.evenFib.setMaxVal(4000000)
         assert self.evenFib.answer() == (233168), "incorrect answer %d" % self.evenFib.answer()
 
 evenFibTestSuite = unittest.TestSuite()
