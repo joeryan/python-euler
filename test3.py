@@ -10,8 +10,8 @@ class TestLargePrime(unittest.TestCase):
         assert self.lgPrime.lgPrimeNum() == (29), "incorrect answer %d" % lgPrime.lgPrimeNum()
 
     def testFinal(self):
-        self.lgPrime.setNumber(4000000)
-        assert self.lgPrime.lgPrimeNum() == (4613732), "incorrect answer %d" % self.lgPrime.lgPrimeNum()
+        self.lgPrime.setNumber(600851475143)
+        assert self.lgPrime.lgPrimeNum() == (0), "incorrect answer %d" % self.lgPrime.lgPrimeNum()
 
 lgPrimeTestSuite = unittest.TestSuite()
 
