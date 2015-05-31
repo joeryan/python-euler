@@ -3,7 +3,7 @@ import lgprime
 
 class TestLargePrime(unittest.TestCase):
     def setUp(self):
-        self.lgPrime = lgprime.lgPrime()
+        self.lgPrime = lgprime.LgPrime()
 
     def testInitial(self):
         self.lgPrime.setNumber(13195)
