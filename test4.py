@@ -19,8 +19,8 @@ class TestPalinProd(unittest.TestCase):
 
 palProdTestSuite = unittest.TestSuite()
 
-palProdTestSuite.addTest(TestLargePrime("testInitial"))
-palProdTestSuite.addTest(TestLargePrime("testFinal"))
+palProdTestSuite.addTest(TestPalinProd("testInitial"))
+palProdTestSuite.addTest(TestPalinProd("testFinal"))
 
 runner = unittest.TextTestRunner()
-runner.run(lgPrimeTestSuite)
+runner.run(palProdTestSuite)
