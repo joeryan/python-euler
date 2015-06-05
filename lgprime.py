@@ -10,9 +10,12 @@ class LgPrime():
         self.num = num
 
     def lgPrimeNum(self):
-        self.primes = set(reduce(list.__add__,
-            ([i, self.num//i] for i in range(1, int(self.num**0.5) + 1) if self.num % 1 == 0)))
-        print self.primes
-        return max(self.primes)
+        self.maxPrime = self.num
+        i = 2
+        while i * i < self.maxPrime:
+            if self.maxPrime % i == 0:
+                self.maxPrime = self.maxPrime / i
+            i += 1
+        return self.maxPrime
 
 # determine the largest
