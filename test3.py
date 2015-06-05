@@ -16,7 +16,7 @@ class TestLargePrime(unittest.TestCase):
 lgPrimeTestSuite = unittest.TestSuite()
 
 lgPrimeTestSuite.addTest(TestLargePrime("testInitial"))
-lgPrimeTestSuite.addTest(TestLargePrime("testFinal"))
+# lgPrimeTestSuite.addTest(TestLargePrime("testFinal"))
 
 runner = unittest.TextTestRunner()
 runner.run(lgPrimeTestSuite)

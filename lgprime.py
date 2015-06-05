@@ -12,6 +12,7 @@ class LgPrime():
     def lgPrimeNum(self):
         self.primes = set(reduce(list.__add__,
             ([i, self.num//i] for i in range(1, int(self.num**0.5) + 1) if self.num % 1 == 0)))
+        print self.primes
         return max(self.primes)
 
 # determine the largest
