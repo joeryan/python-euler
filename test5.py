@@ -5,16 +5,16 @@ import smallmult
 
 class TestSmallMult(unittest.TestCase):
     def setUp(self):
-        self.smallmult = smallmult.SmallMult()
+        self.smallMult = smallmult.SmallMult()
 
     def testInitial(self):
-        self.smallMult.setDigits(2)
-        self.smallMult.calcMaxProd()
+        self.smallMult.setDigits(10)
+        self.smallMult.calcSmallMult()
         assert self.smallMult.getMult() == (2520), "incorrect answer %d" % self.smallMult.getMult()
 
     def testFinal(self):
-        self.smallMult.setDigits(3)
-        self.smallMult.calcMaxProd()
+        self.smallMult.setDigits(10)
+        self.smallMult.calcSmallMult()
         assert self.smallMult.getMult() == (0), "incorrect answer %d" % self.smallMult.getMult()
 
 smallMultTestSuite = unittest.TestSuite()
